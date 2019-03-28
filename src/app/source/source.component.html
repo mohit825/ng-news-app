@@ -1,0 +1,39 @@
+<div class="jumbotron">
+    <h1 class="display-1">NEWS CAST</h1> 
+    <h3>Select source and language of your choice to watch latest news.</h3> 
+  </div>
+
+
+<div class="group">
+  <div class="my-btn">
+    <input type="button" class="btn btn-info" value = "All" (click) = "filterSource($event)">
+  </div>
+  <input type="button" class="btn btn-info" value = "General" (click) = "filterSource($event)">
+  <input type="button" class="btn btn-info" value = "Entertainment" (click) = "filterSource($event)">
+  <input type="button" class="btn btn-info" value = "Business" (click) = "filterSource($event)">
+  <input type="button" class="btn btn-info" value = "Sports" (click) = "filterSource($event)">
+  
+  
+
+  <div>
+    
+    <select name="news-lang" (change) = "langSource($event)">
+        <option value="en" >English</option>
+        <option value="it">Italian</option>
+        <option value="ar">Arabic</option>
+        <option value="de">German</option>
+        <option value="fr">French</option>
+      </select>
+  </div> 
+
+  
+</div>
+
+<div class="source">
+    <div class="source-item" *ngFor = "let source of sources">
+      <h3 
+      (click) = "selectSource(source.id)">
+      <a>{{source.name}}</a>
+        
+      </h3>
+    </div>

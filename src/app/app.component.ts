@@ -1,5 +1,7 @@
 import { Component , OnInit} from '@angular/core';
-import { DataService } from './data.service';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,21 +10,16 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
  
-  sources : any = [];
+  
 
-  constructor(private dataservice: DataService){ }
+  constructor(){ }
 
   ngOnInit(){
-    this.dataservice.getSources().then((res) =>{
-      return res.json()
-    })
-      .then((res) => {
-        console.log(res.sources, "response");
-        this.sources = res.sources;
-      })
-    .catch((err) =>{
-      console.log("errors" , err)
-    });
+    
 
   }
+
+  
+
+  
 }

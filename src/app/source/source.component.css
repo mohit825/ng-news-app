@@ -1,0 +1,25 @@
+.source{
+    
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;    
+}
+
+.source-item{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.my-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

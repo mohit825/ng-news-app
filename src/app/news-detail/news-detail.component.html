@@ -1,0 +1,14 @@
+<div class="my-btn mt-5">
+  <button type="button" class="btn btn-warning btn-lg"> <a routerLink = ""> Home</a></button> 
+  </div>
+<div class = "my-card">
+  <div *ngFor = "let source of sources"
+  class="card" style="width: 18rem;">
+    <img src="{{source.urlToImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{source.title}}</h5>
+      <p  class="card-text">{{source.description}}</p>
+      <a href="{{source.url}}" target="_blank" class="btn btn-primary">Read News</a>
+    </div>
+  </div>
+</div>

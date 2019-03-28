@@ -1,0 +1,17 @@
+.my-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.my-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 8px; 
+}
+
+a{
+    text-decoration: none;
+    color: black
+}   
